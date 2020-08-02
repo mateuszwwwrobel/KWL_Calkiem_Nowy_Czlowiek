@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- MAIN -->
+
+    <div class="container">
+        <h1 class="poppins-black-font pt-5">CAŁKIEM NOWY</h1>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h1 class="playfair-font"><b>CZŁOWIEK</b></h1>
+                <p class="text-justify poppins-font-paragraph">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit ut aliquam, purus sit amet
+                    luctus venenatis, lectus magna fringilla
+                    urna, porttitor rhoncus dolor purus non
+                    facilisis mauris sit amet massa
+                </p>
+                <button type="button" class="CTA-button mt-3 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src='{% static "img/logo-kwl.png" %}'>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MAIN-->
+
+{% endblock content %}
