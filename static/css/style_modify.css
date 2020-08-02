@@ -1,0 +1,49 @@
+.icons-hover:hover {
+    transform: scale(1.2);
+    transition-duration: .5s;
+    fill: #EA2340;
+    background-color:transparent !important;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+    
+.nav-tab:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+.CTA-button{
+    font-size: 24px;
+    font-weight: 900;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.CTA-button:hover {
+    transform: scale(1.1);
+}
+
+
+.poppins-black-font {
+    font-family: 'Poppins', sans-serif;    
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+.playfair-font{
+    font-family: 'Playfair Display';
+    font-size: 55px;
+    letter-spacing: 10px;
+}
+
+.poppins-font-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.copyright-mark {
+    height: 27px;
+}
+
