@@ -20,7 +20,10 @@
 
     <title>KWL - Całkiem Nowy Człowiek</title>
   </head>
-  <body style="background-image: url({% static 'img/background.png' %}) ; background-size: cover;">
+      
+    {% block body-background %}
+
+    {% endblock body-background %}
 
 
 {% include 'navbar.html' %}

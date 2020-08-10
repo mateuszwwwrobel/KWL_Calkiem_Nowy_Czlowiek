@@ -11,13 +11,13 @@
                 <div class="col-6">
                     <ul class="navbar-nav d-flex align-items-center">
                     <li class="nav-item active mr-5">
-                        <a class="nav-link" href="#"><img style ='height: 60px;' src='{% static "img/logo-kwl.png" %}'><span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'core:home' %}"><img style ='height: 60px;' src='{% static "img/logo-kwl.png" %}'><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-tab nav-item mr-3 my-2 border border-dark">
-                        <a class="nav-link px-3 text-dark" href="#">ODSŁUCH</a>
+                        <a class="nav-link px-3 text-dark" href="{% url 'core:listen' %}">ODSŁUCH</a>
                     </li>
                     <li class="nav-tab nav-item my-2 mr-3 border border-dark">
-                        <a class="nav-link px-3 text-dark" href="#">KONCERTY</a>
+                        <a class="nav-link px-3 text-dark" href="{% url 'core:concerts' %}">KONCERTY</a>
                     </li>
                     </ul>
                 </div>

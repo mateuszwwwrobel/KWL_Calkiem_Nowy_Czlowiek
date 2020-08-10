@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body-background %}
+
+    <body style="background-image: url({% static 'img/background2.jpg' %}); background-size: cover;">
+
+{% endblock body-background %}
+
+{% block content %}
+
+    <!-- MAIN -->
+    <div class="bg-black">
+        <div class="row ">
+            <div class="col-sm-6 d-flex justify-content-around">
+                <h2 class="d-flex align-items-center poppins-black-font-listen">ODSŁUCH</h2>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-around">
+                <button type="button" class="CTA-button my-2 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="mt-5 col-lg-6 d-flex align-items-center justify-content-center">
+                <iframe style="border: 15px solid #EA2340;" width="425" height="375" src="https://www.youtube.com/embed/lT6QSqKySGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-6 mt-5">
+                <ul class="navbar-nav d-flex align-items-center poppins-black-font-listen">
+                    <li class="nav-tab nav-item my-2 mr-3 border border-dark d-flex justify-content-center">
+                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/TIDAL.svg' %}">TIDAL</a>
+                    </li>
+                    <li class="nav-tab nav-item mr-3 my-2 border border-dark">
+                        <a class="nav-link px-3 black-font" href="{% url 'core:listen' %}"><img class="pr-3" src="{% static 'img/Spotify.svg' %}">SPOTIFY</a>
+                    </li>
+                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
+                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/iTunes.svg' %}">iTunes</a>
+                    </li>
+                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
+                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/Deezer.svg' %}">DEEZER</a>
+                    </li>
+                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
+                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/YouTube.svg' %}">YouTube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MAIN-->
+
+{% endblock content %}
