@@ -3,11 +3,11 @@
     transition-duration: .5s;
     fill: #EA2340;
     background-color:transparent !important;
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    filter: invert(40%) grayscale(100%) brightness(75%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
 }
     
 .nav-tab:hover {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    filter: invert(40%) grayscale(100%) brightness(75%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
     transform: scale(1.1);
     transition-duration: .5s;
 }
@@ -31,6 +31,14 @@
     font-weight: 900;
 }
 
+.poppins-black-font-listen{
+    font-family: 'Poppins', sans-serif;    
+    font-size: 28px;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+
 .playfair-font{
     font-family: 'Playfair Display';
     font-size: 55px;
@@ -47,3 +55,53 @@
     height: 27px;
 }
 
+.bg-black{
+    background-color: black;
+    color: #fff;
+}
+
+.black-font{
+    color: black !important;
+    width: 370px;
+    height: 80px;
+}
+
+.iframe-border{
+    border: solid 5px #EA2340;
+}
+
+
+
+/* TESTS TV */
+
+/* .tv-image{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    z-index: 1;
+}
+
+.tv-iframe{
+    position: absolute;
+}
+
+
+
+
+.tv-wrapper {
+    position: relative;
+  }
+  
+  .tv {
+    position: absolute;
+    width: 640px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+.iframe {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+  } */
+  
