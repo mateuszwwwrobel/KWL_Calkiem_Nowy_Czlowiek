@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Order
+from .forms import OrderForm
 
 # Create your views here.
 
@@ -11,8 +13,15 @@ def listen_view(request):
 
 
 def concert_view(request):
-    return render(request, 'concert.html')
+    return render(request, 'concerts.html')
 
 
 def order_form_view(request):
-    return render(request, 'order_form.html')
+    form = OrderForm(request.POST or None)
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'order_form.html', context)
+
