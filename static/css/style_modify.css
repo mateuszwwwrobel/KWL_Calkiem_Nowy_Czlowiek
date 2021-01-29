@@ -38,7 +38,6 @@
     font-weight: 900;
 }
 
-
 .playfair-font{
     font-family: 'Playfair Display';
     font-size: 55px;
@@ -55,6 +54,12 @@
     height: 27px;
 }
 
+.credentials {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
 .bg-black{
     background-color: black;
     color: #fff;
@@ -66,42 +71,19 @@
     height: 80px;
 }
 
-.iframe-border{
-    border: solid 5px #EA2340;
+.yt-icon{
+    height: 25px;
+    padding-bottom: 2px;
 }
 
-
-
-/* TESTS TV */
-
-/* .tv-image{
-    position: absolute;
-    width: 450px;
-    height: 400px;
-    z-index: 1;
+.song-list {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
-.tv-iframe{
-    position: absolute;
+.song-list-title {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
 }
-
-
-
-
-.tv-wrapper {
-    position: relative;
-  }
-  
-  .tv {
-    position: absolute;
-    width: 640px;
-    pointer-events: none;
-    z-index: 1;
-  }
-  
-.iframe {
-    position: absolute;
-    top: 35px;
-    left: 50px;
-  } */
-  

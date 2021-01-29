@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body-background %}
+
+    <body style="background-image: url({% static 'img/background2.jpg' %}); background-size: cover;">
+
+{% endblock body-background %}
+
+{% block content %}
+
+    <!-- MAIN -->
+    <div class="row bg-black">
+        <div class="col-lg-6 d-flex justify-content-around my-3">
+            <h2 class="d-flex align-items-center poppins-black-font-listen">ZAMÓWIENIE</h2>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-around my-3">
+            <p></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-4 mt-5 form-group">
+                <form action="{% url 'core:order-complete' %}" method="post" id='order-form'>
+                    {% csrf_token %}
+                    <b>{{ form.as_p }}</b>
+                    <hr>
+                    <input type="submit" class="btn btn-danger CTA-button" value="Zamawiam!">
+                </form>
+            </div>
+            <div class="col-lg-8 mt-5">
+                <img class="img-fluid" src='{% static "img/okladka.png" %}'>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MAIN-->
+
+
+
+
+{% endblock content %}

@@ -16,36 +16,121 @@
                 <h2 class="d-flex align-items-center poppins-black-font-listen">ODSŁUCH</h2>
             </div>
             <div class="col-sm-6 d-flex justify-content-around">
-                <button type="button" class="CTA-button my-2 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+                <a href="{% url 'core:order' %}">
+                    <button type="button" class="CTA-button my-2 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+                </a>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row mb-4">
             <div class="mt-5 col-lg-6 d-flex align-items-center justify-content-center">
-                <iframe style="border: 15px solid #EA2340;" width="425" height="375" src="https://www.youtube.com/embed/lT6QSqKySGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="mainIframe" name="mainIframe" style="border: 7px solid #EA2340;" width="525" height="325" src="{% static 'img/small-logo.png' %}"></iframe>
             </div>
             <div class="col-lg-6 mt-5">
-                <ul class="navbar-nav d-flex align-items-center poppins-black-font-listen">
-                    <li class="nav-tab nav-item my-2 mr-3 border border-dark d-flex justify-content-center">
-                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/TIDAL.svg' %}">TIDAL</a>
+                <p class="song-list-title">Lista utworów:</p>
+                <ul class="navbar-nav d-flex align-items-left">
+
+                    <li class="nav-item">
+                        <p class="song-list"><a id="Iframe" target="mainIframe" href="https://www.youtube.com/embed/PQgrrppYBPI?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>1. SKRZYDŁA (PROD. MOUNTAIN LAKES)
+                        </p>
                     </li>
-                    <li class="nav-tab nav-item mr-3 my-2 border border-dark">
-                        <a class="nav-link px-3 black-font" href="{% url 'core:listen' %}"><img class="pr-3" src="{% static 'img/Spotify.svg' %}">SPOTIFY</a>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/wGyrdmyyAOk?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>2. FRESHMAN (PROD. XSTCK x KONAR)
+                        </p>
                     </li>
-                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
-                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/iTunes.svg' %}">iTunes</a>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/B5Gk-gpGOk4?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>3. EKRAN (PROD. KWL)
+                        </p>
                     </li>
-                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
-                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/Deezer.svg' %}">DEEZER</a>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/btrxaY9pqi4?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>4. NA KLUCZ (PROD. KWL)
+                        </p>
                     </li>
-                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
-                        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/YouTube.svg' %}">YouTube</a>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/UXtEE22_Swc?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>5. ARIZONA (PROD. EIGUS)
+                        </p>
                     </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/NUMlzaU07k4?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>6. SEAHAVEN (PROD. KWL)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/dkoyL4fiU_Q?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>7. MOONMIST (PROD. KWL)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/MI6i5N9AIJo?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>8. EPILEPSJA (PROD. EIGUS)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/KzqQ5jMk4MY?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>9. TIME ZONE (PROD. KWL)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/HvHGTHX-f78?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>10. CLUB ROTATION FEAT. GIBSON (PROD. EIGUS)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/6HQR4BuYBgE?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>11. CZARNE FILMY (PROD. KWL)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/nUeENC9Tz4Y?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>12. BYŁEM JESTEM FEAT. MADA (PROD. DELAYLAMA)
+                        </p>
+                    </li>
+
+                    <li class="nav-item">
+                        <p class="song-list"><a target="mainIframe" href="https://www.youtube.com/embed/7hYZcnxNFx4?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO">
+                            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+                        </a>13. CAŁKIEM NOWY CZŁOWIEK (PROD. EIGUS)
+                        </p>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
     </div>
+
+{#    <li class="nav-tab nav-item my-2 mr-3 border border-dark">#}
+{#        <a class="nav-link px-3 black-font" href="{% url 'core:concerts' %}"><img class="pr-3" src="{% static 'img/YouTube.svg' %}">YouTube</a>#}
+{#    </li>#}
 
     <!-- END MAIN-->
 

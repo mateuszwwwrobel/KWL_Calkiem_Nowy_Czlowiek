@@ -23,10 +23,12 @@
                     urna, porttitor rhoncus dolor purus non
                     facilisis mauris sit amet massa
                 </p>
-                <button type="button" class="CTA-button mt-3 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+                <a href="{% url 'core:order' %}">
+                    <button type="button" class="CTA-button mt-3 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+                </a>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src='{% static "img/logo-kwl.png" %}'>
+                <img class="img-fluid" src='{% static "img/okladka.png" %}'>
             </div>
         </div>
     </div>
