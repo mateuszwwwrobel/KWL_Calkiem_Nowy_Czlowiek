@@ -136,3 +136,5 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 django_heroku.settings(locals())
+
+ADMINS = [('Mateusz', 'mateusz.hipili@gmail.com'), ]
