@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block body-background %}
 
@@ -23,7 +24,7 @@
             <div class="col-lg-4 mt-5 form-group">
                 <form action="{% url 'core:order-complete' %}" method="post" id='order-form'>
                     {% csrf_token %}
-                    <b>{{ form.as_p }}</b>
+                    <b>{{ form|crispy }}</b>
                     <hr>
                     <input type="submit" class="btn btn-danger CTA-button" value="Zamawiam!">
                 </form>
@@ -35,8 +36,6 @@
     </div>
 
     <!-- END MAIN-->
-
-
 
 
 {% endblock content %}
