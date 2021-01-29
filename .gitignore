@@ -9,7 +9,6 @@ __pycache__/
 local_settings.py
 media
 .env 
-core/migrations
 db.sqlite3
 
 
