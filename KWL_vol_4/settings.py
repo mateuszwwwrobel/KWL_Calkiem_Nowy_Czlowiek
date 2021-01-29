@@ -141,4 +141,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 django_heroku.settings(locals())
 
-ADMINS = [('Mateusz', 'mateusz.hipili@gmail.com'), ]
+
+if 'DATABASE_URL' in os.environ:
+    import dj_database_url
+    DATABASES = {'default': dj_database_url.config()}
