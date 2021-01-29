@@ -48,7 +48,7 @@ class OrderConfirmView(View):
             send_mail(
                 subject,
                 message,
-                'matthew.sparrow91@gmail.com',
+                'kwlrec@gmail.com',
                 mail,
                 html_message=html_message,
             )
