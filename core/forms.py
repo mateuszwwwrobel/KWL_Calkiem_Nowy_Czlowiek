@@ -10,7 +10,7 @@ class OrderForm(forms.ModelForm):
             'order_email',
             'order_address_1',
             'order_address_2',
-            'zip_code',
+            'post_code',
             'order_email',
             'order_amount',
             )
@@ -19,6 +19,6 @@ class OrderForm(forms.ModelForm):
             'order_email': forms.TextInput(attrs={'class': 'form-control'}),
             'order_address_1': forms.TextInput(attrs={'class': 'form-control'}),
             'order_address_2': forms.TextInput(attrs={'class': 'form-control'}),
-            'zip_code': forms.TextInput(attrs={'class': 'form-control'}),
+            'post_code': forms.TextInput(attrs={'class': 'form-control'}),
             'order_amount': forms.TextInput(attrs={'class': 'form-control'}),
         }

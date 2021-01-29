@@ -14,7 +14,7 @@ class Order(models.Model):
         "Miejscowość",
         max_length=1024,
     )
-    zip_code = models.CharField(
+    post_code = models.CharField(
         "Kod pocztowy",
         max_length=6,
     )
