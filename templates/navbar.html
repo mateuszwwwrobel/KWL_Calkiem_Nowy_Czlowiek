@@ -1,39 +1,40 @@
 {% load static %}
 
-    <!-- NAVBAR -->
 
-    <div class='navbar navbar-expand-md navbar-light' style="background-color: #F5EEE6;">
-        <div class='container'>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class='row col-12 collapse navbar-collapse' id="navbarNav">
-                <div class="col-6">
-                    <ul class="navbar-nav d-flex align-items-center">
-                    <li class="nav-item active mr-5">
-                        <a class="nav-link" href="{% url 'core:home' %}"><img style ='height: 60px;' src='{% static "img/logo-kwl.png" %}'><span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-tab nav-item mr-3 my-2 border border-dark">
-                        <a class="nav-link px-3 text-dark" href="{% url 'core:listen' %}">ODSŁUCH</a>
-                    </li>
-                    <li class="nav-tab nav-item my-2 mr-3 border border-dark">
-                        <a class="nav-link px-3 text-dark" href="{% url 'core:concerts' %}">KONCERTY</a>
-                    </li>
-                    </ul>
-                </div>
-                <div class='col-6 d-flex align-items-center justify-content-end'>
-                    <a href="https://www.youtube.com/channel/UCEgTMJBSwkDrY2la6TLPGDg" class='icons-hover float-right text-dark' data-toggle="tooltip" title="Youtube!">
-                        <img class="pr-3" src="{% static 'img/youtube.svg' %}">
-                    </a>
-                    <a href="https://www.facebook.com/KWL073" class='icons-hover float-right text-dark' data-toggle="tooltip" title="Facebook!">
-                        <img class="pr-3"  src="{% static 'img/facebook.svg' %}">
-                    </a>
-                    <a href="#" class='icons-hover float-right text-dark' data-toggle="tooltip" title="Instagram!">
-                        <img class="pr-3"  src="{% static 'img/instagram.svg' %}">
-                    </a>
-                </div>
-            </div>  
+<!-- NAVBAR -->
+
+<div class='navbar navbar-expand-md navbar-light' style="background-color: #F5EEE6;">
+    <div class='container'>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class='row col-12 collapse navbar-collapse' id="navbarNav">
+            <div class="col-6">
+                <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item active mr-5">
+                    <a class="nav-link" href="{% url 'core:home' %}"><img style ='height: 60px;' src='{% static "img/logo-kwl.png" %}'><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-tab nav-item mr-3 my-2 border border-dark">
+                    <a class="nav-link px-3 text-dark" href="{% url 'core:listen' %}">ODSŁUCH</a>
+                </li>
+                <li class="nav-tab nav-item my-2 mr-3 border border-dark">
+                    <a class="nav-link px-3 text-dark" href="{% url 'core:concerts' %}">KONCERTY</a>
+                </li>
+                </ul>
+            </div>
+            <div class='col-6 d-flex align-items-center justify-content-end'>
+                <a target="_blank" href="https://www.youtube.com/channel/UCEgTMJBSwkDrY2la6TLPGDg" class='icons-hover float-right text-dark' data-toggle="tooltip" title="Youtube!">
+                    <img class="pr-3" src="{% static 'img/youtube.svg' %}">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/KWL073" class='icons-hover float-right text-dark' data-toggle="tooltip" title="Facebook!">
+                    <img class="pr-3"  src="{% static 'img/facebook.svg' %}">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/kwlrec/" class='icons-hover float-right text-dark' data-toggle="tooltip" title="Instagram!">
+                    <img class="pr-3"  src="{% static 'img/instagram.svg' %}">
+                </a>
+            </div>
         </div>
     </div>
+</div>
 
-    <!-- END NAVBAR -->
+<!-- END NAVBAR -->

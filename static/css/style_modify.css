@@ -44,6 +44,12 @@
     letter-spacing: 10px;
 }
 
+.poppins-font-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
 .poppins-font-paragraph {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -51,12 +57,12 @@
 }
 
 .copyright-mark {
-    height: 27px;
+    height: 17px;
 }
 
 .credentials {
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -91,6 +97,6 @@
 .listen-title{
     text-align: center;
     padding-top: 25px;
-    font-family: 'Playfair Display';
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }

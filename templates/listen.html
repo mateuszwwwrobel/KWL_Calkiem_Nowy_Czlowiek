@@ -17,14 +17,16 @@
             </div>
             <div class="col-sm-6 d-flex justify-content-around">
                 <a href="{% url 'core:order' %}">
-                    <button type="button" class="CTA-button my-2 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
+                    <button type="button" class="CTA-button poppins-font-button my-2 btn btn-danger btn-lg">ZAMÓW PŁYTĘ</button>
                 </a>
             </div>
         </div>
     </div>
     <div class="container">
-        <h4 class="listen-title">Wybierz utwór z listy poniżej i słuchaj najświeższych utworów z płyty KWL!</h4>
-        <h6 class="listen-title">Aby zmienić kawałek kliknij w ikonkę YT obok wybranego utworu.</h6>
+        <h6 class="listen-title">Aby zmienić kawałek kliknij w ikonkę
+            <img alt="Youtube logo." class="nav-tab yt-icon pr-1" src="{% static 'img/YouTube.svg' %}">
+            obok wybranego utworu.
+        </h6>
         <div class="row mb-4">
             <div class="mt-5 col-lg-6 d-flex align-items-center justify-content-center">
                 <iframe id="mainIframe" name="mainIframe" style="border: 7px solid #EA2340;" width="525" height="325" src="https://www.youtube.com/embed/PQgrrppYBPI?list=PLQehsEFjR8olu4xtlS54Osm86N4bJEcMO"></iframe>
