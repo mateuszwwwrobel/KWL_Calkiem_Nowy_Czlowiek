@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body-background %}
+
+    <body style="background-image: url({% static 'img/background2.jpg' %}); background-size: cover;">
+
+{% endblock body-background %}
+
+{% block content %}
+
+<div class="p-5 text-center">
+    {% if messages %}
+        {% for message in messages %}
+            <h3 class="poppins-font-paragraph"> {{ message }} </h3>
+            <p class="song-list">Pozostało płyt: {{ amount_left }}</p>
+            <p class="song-list">Jeśli wciąż chcesz zamówić płytę proszę skontaktuj się ze mną na jednym z portali społecznościowych.</p>
+        {% endfor %}
+    {% endif %}
+</div>
+
+
+{% endblock content %}
