@@ -11,7 +11,6 @@ class OrderForm(forms.ModelForm):
             'address_1',
             'address_2',
             'post_code',
-            'email',
             'quantity',
             )
         widgets = {

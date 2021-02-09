@@ -77,10 +77,6 @@ class OrderConfirmView(View):
                 html_message=html_message,
             )
 
-            context = {
-                'user': order_name,
-            }
-
             form.save()
             messages.success(request, 'Dzięki! Płyta została zamówiona! Na podany adres mailowy '
                                       'zostały wysłane szczegóły zamówienia.')
