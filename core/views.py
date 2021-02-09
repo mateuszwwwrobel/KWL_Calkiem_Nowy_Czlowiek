@@ -31,7 +31,7 @@ class OrderFormView(FormView):
 class OrderConfirmView(View):
     def post(self, request):
         amount_so_far = self.total_quantity()
-        amount_ordered = int(self.request.POST['order_amount'])
+        amount_ordered = int(self.request.POST['quantity'])
         if amount_so_far is not None:
             total_amount = amount_so_far + amount_ordered
         else:
@@ -48,19 +48,19 @@ class OrderConfirmView(View):
 
         form = OrderForm(request.POST or None)
         if form.is_valid():
-            order_name = request.POST.get('order_name')
-            mail = [request.POST.get('order_email'), os.environ['EMAIL_HOST_USER'],]
+            order_name = request.POST.get('fullname')
+            mail = [request.POST.get('email'), os.environ['EMAIL_HOST_USER'], ]
 
-            combined_address = f"{request.POST.get('order_address_1')} {request.POST.get('order_address_2')}"
+            combined_address = f"{request.POST.get('address_1')} {request.POST.get('address_2')}"
 
             mail_data = {
                 'full_name': order_name,
                 'address': combined_address,
                 'postcode': request.POST.get('post_code'),
-                'amount': request.POST.get('order_amount'),
+                'amount': request.POST.get('quantity'),
             }
 
-            if int(request.POST.get('order_amount')) == 0:
+            if int(request.POST.get('quantity')) == 0:
                 messages.warning(request, 'Nie możesz zamówić 0 płyt. Wpisz poprawną wartość.')
                 return redirect('core:order')
 
@@ -77,10 +77,6 @@ class OrderConfirmView(View):
                 html_message=html_message,
             )
 
-            context = {
-                'user': order_name,
-            }
-
             form.save()
             messages.success(request, 'Dzięki! Płyta została zamówiona! Na podany adres mailowy '
                                       'zostały wysłane szczegóły zamówienia.')
@@ -93,7 +89,7 @@ class OrderConfirmView(View):
 
     @staticmethod
     def total_quantity() -> int:
-        quantity = Order.objects.all().aggregate(total_quantity=Sum('order_amount'))
+        quantity = Order.objects.all().aggregate(total_quantity=Sum('quantity'))
 
         total = quantity['total_quantity']
         return total
