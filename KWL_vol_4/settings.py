@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['.herokuapp.com', ]
 
 
 # Sendgrid
+EMAIL_BACKEND = "sgbackend.SendGridBackend"
 SENDGRID_API_KEY = os.environ['SENDGRID_API']
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = os.environ['SENDGRID_USERNAME']
