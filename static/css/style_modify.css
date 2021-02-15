@@ -88,6 +88,14 @@
     font-weight: 400;
 }
 
+.song-list a{
+    text-decoration: none;
+}
+
+.col-12 a{
+    text-decoration: none;
+}
+
 .song-list-title {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
